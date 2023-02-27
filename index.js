@@ -99,6 +99,35 @@ const promptForEngineer = () => {
   });
 };
 
-const promptForIntern = () => {};
+const promptForIntern = () => {
+    inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is your intern's name?",
+        name: "name",
+      },
+      {
+        type: "input",
+        message: "What is your intern's id?",
+        name: "id",
+      },
+      {
+        type: "input",
+        message: "What is your intern's email?",
+        name: "email",
+      },
+      {
+        type: "input",
+        message: "What is your intern's school?",
+        name: "school",
+      },
+    ])
+    .then((res) => {
+      const intern = new Intern(res.name, res.id, res.email, res.school);
+      team.push(intern);
+      nextEmployeePrompt();
+    });
+};
 
 const buildPage = () => {};
