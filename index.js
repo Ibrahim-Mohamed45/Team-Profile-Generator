@@ -69,13 +69,36 @@ const nextEmployeePrompt = () => {
 };
 
 const promptForEngineer = () => {
-  
+    inquirer
+  .prompt([
+    {
+      type: "input",
+      message: "What is your engineer's name?",
+      name: "name",
+    },
+    {
+      type: "input",
+      message: "What is your engineer's id?",
+      name: "id",
+    },
+    {
+      type: "input",
+      message: "What is your engineer's email?",
+      name: "email",
+    },
+    {
+      type: "input",
+      message: "What is your engineer's GitHub username?",
+      name: "github",
+    },
+  ])
+  .then((res) => {
+    const engineer = new Engineer(res.name, res.id, res.email, res.github);
+    team.push(engineer);
+    nextEmployeePrompt();
+  });
 };
 
-const promptForIntern = () => {
-  
-};
+const promptForIntern = () => {};
 
-const buildPage = () => {
-  
-};
+const buildPage = () => {};
