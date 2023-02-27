@@ -40,4 +40,42 @@ inquirer
   .then((res) => {
     const manager = new Manager(res.name, res.id, res.email, res.officeNumber);
     team.push(manager);
+    nextEmployeePrompt();
   });
+
+const nextEmployeePrompt = () => {
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        message: "Which type of team member would you like to add?",
+        name: "nextEmployee",
+        choices: [
+          "Engineer",
+          "Intern",
+          "I don't want to add any more team members.",
+        ],
+      },
+    ])
+    .then((res) => {
+      if (res.nextEmployee === "Engineer") {
+        promptForEngineer();
+      } else if (res.nextEmployee === "Intern") {
+        promptForIntern();
+      } else {
+        buildPage();
+      }
+    });
+};
+
+const promptForEngineer = () => {
+  
+};
+
+const promptForIntern = () => {
+  
+};
+
+const buildPage = () => {
+  
+};
