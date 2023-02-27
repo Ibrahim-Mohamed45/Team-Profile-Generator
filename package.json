@@ -1,0 +1,29 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "This application will take in information about employees on a software engineering team, then generates a HTML webpage that displays summaries for each person.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrahim-Mohamed45/Team-Profile-Generator.git"
+  },
+  "keywords": [],
+  "author": "Ibrahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ibrahim-Mohamed45/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Ibrahim-Mohamed45/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
