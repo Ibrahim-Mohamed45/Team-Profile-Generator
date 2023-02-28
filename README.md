@@ -4,7 +4,7 @@
 
 This Team Profile Generator is a command-line application that will take in information about employees on a software engineering team, and will then generate an HTML webpage that displays summaries for each member of the team. The webpage offers the team's manager basic info on their team members such as their emails and GitHub profiles.
 
-### Built with
+### Built with:
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -29,10 +29,10 @@ SO THAT I have quick access to their emails and GitHub profiles
 - [License](#License)
 
 ## Installation
-### Prerequisites
+### Prerequisites:
 You must have **node.js** installed on your computer to install this application.
 
-To install the application:
+### To install the application:
 1. Clone the repo
 ```
 git clone https://github.com/Ibrahim-Mohamed45/Team-Profile-Generator.git
