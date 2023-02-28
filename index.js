@@ -69,38 +69,38 @@ const nextEmployeePrompt = () => {
 };
 
 const promptForEngineer = () => {
-    inquirer
-  .prompt([
-    {
-      type: "input",
-      message: "What is your engineer's name?",
-      name: "name",
-    },
-    {
-      type: "input",
-      message: "What is your engineer's id?",
-      name: "id",
-    },
-    {
-      type: "input",
-      message: "What is your engineer's email?",
-      name: "email",
-    },
-    {
-      type: "input",
-      message: "What is your engineer's GitHub username?",
-      name: "github",
-    },
-  ])
-  .then((res) => {
-    const engineer = new Engineer(res.name, res.id, res.email, res.github);
-    team.push(engineer);
-    nextEmployeePrompt();
-  });
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is your engineer's name?",
+        name: "name",
+      },
+      {
+        type: "input",
+        message: "What is your engineer's id?",
+        name: "id",
+      },
+      {
+        type: "input",
+        message: "What is your engineer's email?",
+        name: "email",
+      },
+      {
+        type: "input",
+        message: "What is your engineer's GitHub username?",
+        name: "github",
+      },
+    ])
+    .then((res) => {
+      const engineer = new Engineer(res.name, res.id, res.email, res.github);
+      team.push(engineer);
+      nextEmployeePrompt();
+    });
 };
 
 const promptForIntern = () => {
-    inquirer
+  inquirer
     .prompt([
       {
         type: "input",
@@ -130,4 +130,7 @@ const promptForIntern = () => {
     });
 };
 
-const buildPage = () => {};
+const buildPage = () => {
+  fs.writeFileSync(outputPath, render(team));
+  console.log("Your team profile html page has been created successfully!");
+};
