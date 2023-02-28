@@ -21,11 +21,23 @@ inquirer
       type: "input",
       message: "What is your team manager's name?",
       name: "name",
+      validate(input) {
+        if (input === "") {
+          return "Please add the manager's name!";
+        }
+        return true;
+      },
     },
     {
       type: "input",
       message: "What is your team manager's id?",
       name: "id",
+      validate(input) {
+        if (input === "") {
+          return "Please add the manager's ID!";
+        }
+        return true;
+      },
     },
     {
       type: "input",
@@ -41,6 +53,12 @@ inquirer
       type: "input",
       message: "What is your team manager's office number?",
       name: "officeNumber",
+      validate(input) {
+        if (input === "") {
+          return "Please add the manager's office number";
+        }
+        return true;
+      },
     },
   ])
   .then((res) => {
@@ -81,11 +99,23 @@ const promptForEngineer = () => {
         type: "input",
         message: "What is your engineer's name?",
         name: "name",
+        validate(input) {
+            if (input === "") {
+              return "Please add the engineer's name!";
+            }
+            return true;
+          },
       },
       {
         type: "input",
         message: "What is your engineer's id?",
         name: "id",
+        validate(input) {
+            if (input === "") {
+              return "Please add the engineer's ID!";
+            }
+            return true;
+          },
       },
       {
         type: "input",
@@ -101,6 +131,12 @@ const promptForEngineer = () => {
         type: "input",
         message: "What is your engineer's GitHub username?",
         name: "github",
+        validate(input) {
+            if (input === "") {
+              return "Please add the engineer's GitHub username!";
+            }
+            return true;
+          },
       },
     ])
     .then((res) => {
@@ -117,11 +153,23 @@ const promptForIntern = () => {
         type: "input",
         message: "What is your intern's name?",
         name: "name",
+        validate(input) {
+            if (input === "") {
+              return "Please add the intern's name!";
+            }
+            return true;
+          },
       },
       {
         type: "input",
         message: "What is your intern's id?",
         name: "id",
+        validate(input) {
+            if (input === "") {
+              return "Please add the intern's ID!";
+            }
+            return true;
+          },
       },
       {
         type: "input",
@@ -137,6 +185,12 @@ const promptForIntern = () => {
         type: "input",
         message: "What is your intern's school?",
         name: "school",
+        validate(input) {
+            if (input === "") {
+              return "Please add the intern's school name!";
+            }
+            return true;
+          },
       },
     ])
     .then((res) => {
