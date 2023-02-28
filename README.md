@@ -11,6 +11,13 @@ This Team Profile Generator is a command-line application that will take in info
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
+## User Story
+
+```text
+AS A manager
+I WANT to generate a webpage that displays my team's basic info
+SO THAT I have quick access to their emails and GitHub profiles
+```
 
 ## Table of Contents
 - [Installation](#Installation)
@@ -20,14 +27,6 @@ This Team Profile Generator is a command-line application that will take in info
 - [Credits](#Credits)
 - [Contributing](#Contributing)
 - [License](#License)
-
-## User Story
-
-```text
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
-```
 
 ## Installation
 ### Prerequisites
