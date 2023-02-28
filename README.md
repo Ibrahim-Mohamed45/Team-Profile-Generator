@@ -11,8 +11,8 @@ This Team Profile Generator is a command-line application that will take in info
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
+
 ## Table of Contents
-- [User Story](#User)
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Tests](#Tests)
@@ -20,7 +20,6 @@ This Team Profile Generator is a command-line application that will take in info
 - [Credits](#Credits)
 - [Contributing](#Contributing)
 - [License](#License)
-
 
 ## User Story
 
@@ -50,12 +49,22 @@ The application is invoked by entering the following command on your terminal:
 ```
 node index.js
 ```
+Terminal input: 
+<br/>
+<img src="assets\images\team-profile-input.png">
+<br/>
+HTML output:
+<br/>
+<img src="assets\images\team-profile-html.png">
 
 ## Tests
 To run tests enter this command on your terminal:
 ```
 npm test
 ```
+Test output: 
+<br/>
+<img src="assets\images\team-profile-tests.png">
 
 ## Questions
 Contact me if you have any questions!
