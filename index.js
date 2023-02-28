@@ -4,6 +4,7 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const emailValidator = require("email-validator");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
@@ -30,6 +31,11 @@ inquirer
       type: "input",
       message: "What is your team manager's email?",
       name: "email",
+      validate: (input) => {
+        return emailValidator.validate(input)
+          ? true
+          : "Please enter a valid email address";
+      },
     },
     {
       type: "input",
@@ -85,6 +91,11 @@ const promptForEngineer = () => {
         type: "input",
         message: "What is your engineer's email?",
         name: "email",
+        validate: (input) => {
+          return emailValidator.validate(input)
+            ? true
+            : "Please enter a valid email address";
+        },
       },
       {
         type: "input",
@@ -116,6 +127,11 @@ const promptForIntern = () => {
         type: "input",
         message: "What is your intern's email?",
         name: "email",
+        validate: (input) => {
+          return emailValidator.validate(input)
+            ? true
+            : "Please enter a valid email address";
+        },
       },
       {
         type: "input",
